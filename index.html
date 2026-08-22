@@ -3,89 +3,149 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mi Página</title>
+
+  <title>memetica</title>
+
+  <!-- FONT -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jacquard+24&display=swap" rel="stylesheet">
 
   <style>
+
     body {
-      font-family: Arial, sans-serif;
-      font-size: 10pt;
       margin: 0;
-      padding: 0;
-      background-color: #f4f4f4;
-      color: #222;
+      font-family: Roboto, sans-serif;
+      background: #fbfbfb;
+      color: #2c2c2c;
     }
 
+    /* HEADER */
     header {
-      background-color: #333;
-      color: white;
-      text-align: center;
-      padding: 20px;
+      font-family: "Jacquard 24", serif;
+      text-align: left;
+      padding: 25px 50px;
+      font-size: 30px;
+      text-transform: lowercase;
     }
 
-    main {
+    /* CONTENEDOR */
+    .container {
       max-width: 900px;
       margin: auto;
-      padding: 20px;
+      padding: 10px;
     }
 
-    .card {
-      background: white;
-      padding: 15px;
-      margin-bottom: 20px;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    /* POST (tipo tumblr card) */
+    .post {
+    
+      background: #fbfbfb;
+      border: 0px solid #e3e3e3;
+      margin-bottom: 60px;
+      padding: 10px;
+      border-radius: 0px;
+
+      display: flex;
+      gap: 25px;
+      align-items: flex-start;
     }
 
     img {
+      order: 2;
+      max-width: 600px;
       width: 100%;
       height: auto;
-      border-radius: 6px;
-      margin-top: 10px;
+      border-radius: 0px;
+    }
+
+    .text {
+      order: 1;
+      flex: 1;
+      text-align: right;
+    }
+
+    .text h2 {
+      font-family: Roboto, san-serif;
+      font-size: 10px;
+      margin-top: 0;
+      font-style: italic;
+    }
+
+    .text p {
+      font-size: 9,5pt;
+      line-height: 2;
+    }
+
+    a {
+      color: #000;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #B7F719;
     }
 
     footer {
-      text-align: center;
-      padding: 15px;
-      background-color: #333;
-      color: white;
-      margin-top: 20px;
+      text-align: right;
+      padding: 40px;
+      font-size: 7pt;
+      color: #777;
     }
+
   </style>
 </head>
 
 <body>
 
-  <header>
-    <h1>Mi Sitio en GitHub Pages</h1>
-    <p>Texto simple con fotos</p>
-  </header>
+<header>
+  memetica<br>
+  
+</header>
 
-  <main>
+<div class="container">
 
-    <div class="card">
-      <h2>Título 1</h2>
+  <!-- POST 1 -->
+  <div class="post">
+    <img src="fotos/sourcemyheart.gif" alt="foto 1">
+
+    <div class="text">
+      <h2>  </h2>
       <p>
-        Aquí puedes escribir un texto descriptivo.
-        Todo el sitio está en Arial tamaño 10 puntos.
+
       </p>
-
-      <img src="foto1.png" alt="Foto 1">
+      
     </div>
+  </div>
 
-    <div class="card">
-      <h2>Título 2</h2>
+  <!-- POST 2 -->
+  <div class="post">
+    <img src="fotos/noseeee.gif" alt="foto 2">
+
+    <div class="text">
+     
       <p>
-        Puedes agregar más bloques con imágenes y texto.
+        
       </p>
-
-      <img src="foto2.png" alt="Foto 2">
     </div>
+  </div>
 
-  </main>
+</div>
 
-  <footer>
-    © 2026 Mi Página
-  </footer>
+   <!-- POST 3 -->
+  <div class="post">
+    <img src="meme_03.jpg" alt="foto 3">
+
+    <div class="text">
+     
+      <p>
+        
+      </p>
+    </div>
+  </div>
+  
+<footer>
+  © bsas
+</footer>
 
 </body>
 </html>
